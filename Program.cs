@@ -8,22 +8,26 @@ namespace ConsoleApp_9
 {
     internal class Program
     {
-        // Задание 1
-        public static void Sayhello()
+        // Задание 4
+        public static void mnogo()
         {
-            Console.WriteLine("привет");
-        }
+            Console.Write("x = ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write("y = ");
+            int y = int.Parse(Console.ReadLine());
 
-        public static void Saypoka()
-        {
-            Console.WriteLine("пока");
+            int plus(int a, int b) { return a + b; }
+            int min(int a, int b) { return a - b; }
+            int proisv(int a, int b) { return a * b; }
+            int del(int a, int b) { return a / b; }
+
+            Console.WriteLine($"Сложение: {plus(x, y)}, Вычитание: {min(x, y)}, Умножение: {proisv(x, y)}, Деление: {del(x, y)}");
         }
 
         static void Main(string[] args)
         {
-            // Задание 1
-            Sayhello();
-            Saypoka();
+            // Задание 4
+            mnogo();
 
             Console.Read();
         }
