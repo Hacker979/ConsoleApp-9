@@ -8,22 +8,21 @@ namespace ConsoleApp_9
 {
     internal class Program
     {
-        // Задание 1
-        public static void Sayhello()
+        // Задание 2
+        public static void plus()
         {
-            Console.WriteLine("привет");
-        }
+            Console.Write("a = ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b = ");
+            int b = int.Parse(Console.ReadLine());
 
-        public static void Saypoka()
-        {
-            Console.WriteLine("пока");
+            Console.WriteLine(a + b);
         }
 
         static void Main(string[] args)
         {
-            // Задание 1
-            Sayhello();
-            Saypoka();
+            // Задание 2
+            plus();
 
             Console.Read();
         }
